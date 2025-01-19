@@ -1,1 +1,4 @@
 # Description:
+EEE 1102 4
+CSE 2201 4
+GEF 1201 18

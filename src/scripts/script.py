@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_data(path = "dataset/spring_data.xlsx"):
+def load_data(path = "../dataset/spring_data.xlsx"):
     data = pd.read_excel(path)
     return data
 
@@ -56,4 +56,10 @@ def main():
     data = load_data()
     faculty = faculty_df(data)
     courses = course_catalog(data)
+    cc = "EEE 1102"
+    section = "4"
+
+    print(faculty_finder(courses, faculty, cc, section))
+
+main()
 
