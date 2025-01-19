@@ -44,6 +44,7 @@ class CourseManager:
         df.rename(columns={0: 'cc', 1: 'section', 3: 'faculty'}, inplace=True)
         df = df.applymap(lambda s: s.strip())
         df.loc[:, 'section'] = df.loc[:, 'section'].apply(lambda s: s.lstrip('0'))
+        df.loc[:, 'section'] = df.loc[:, 'section'].apply(lambda s: s.rstrip('L'))
 
         return df
 
