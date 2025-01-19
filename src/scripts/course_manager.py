@@ -57,10 +57,10 @@ class CourseManager:
         return fac
 
 # Usage example
-df = pd.read_excel("data.xlsx")
-course_manager = CourseManager(df)
-
-cc = "EEE 1102"
-sec = "4L"
-faculty_name = course_manager.faculty_finder(cc, sec)
-print(faculty_name)
+# df = pd.read_excel("data.xlsx")
+# course_manager = CourseManager(df)
+#
+# cc = "EEE 1102"
+# sec = "4L"
+# faculty_name = course_manager.faculty_finder(cc, sec)
+# print(faculty_name)
